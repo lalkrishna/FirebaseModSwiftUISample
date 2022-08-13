@@ -14,6 +14,9 @@
 		92CFE9EE28A7BD3000C1348F /* FirebaseModSwiftUISampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CFE9ED28A7BD3000C1348F /* FirebaseModSwiftUISampleTests.swift */; };
 		92CFE9F828A7BD3000C1348F /* FirebaseModSwiftUISampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CFE9F728A7BD3000C1348F /* FirebaseModSwiftUISampleUITests.swift */; };
 		92CFE9FA28A7BD3000C1348F /* FirebaseModSwiftUISampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CFE9F928A7BD3000C1348F /* FirebaseModSwiftUISampleUITestsLaunchTests.swift */; };
+		92CFEA0F28A7E7A400C1348F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92CFEA0E28A7E7A400C1348F /* GoogleService-Info.plist */; };
+		92CFEA1828A80A6D00C1348F /* FirebaseTools in Frameworks */ = {isa = PBXBuildFile; productRef = 92CFEA1728A80A6D00C1348F /* FirebaseTools */; };
+		92CFEA1A28A80A6D00C1348F /* MyFeature1 in Frameworks */ = {isa = PBXBuildFile; productRef = 92CFEA1928A80A6D00C1348F /* MyFeature1 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		92CFE9F328A7BD3000C1348F /* FirebaseModSwiftUISampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseModSwiftUISampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92CFE9F728A7BD3000C1348F /* FirebaseModSwiftUISampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModSwiftUISampleUITests.swift; sourceTree = "<group>"; };
 		92CFE9F928A7BD3000C1348F /* FirebaseModSwiftUISampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModSwiftUISampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		92CFEA0E28A7E7A400C1348F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		92CFEA1528A809DB00C1348F /* MyFeature1 */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MyFeature1; sourceTree = "<group>"; };
+		92CFEA1628A809DB00C1348F /* FirebaseTools */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = FirebaseTools; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92CFEA1828A80A6D00C1348F /* FirebaseTools in Frameworks */,
+				92CFEA1A28A80A6D00C1348F /* MyFeature1 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +82,12 @@
 		92CFE9D028A7BD2D00C1348F = {
 			isa = PBXGroup;
 			children = (
+				92CFEA1428A809CE00C1348F /* Packages */,
 				92CFE9DB28A7BD2D00C1348F /* FirebaseModSwiftUISample */,
 				92CFE9EC28A7BD3000C1348F /* FirebaseModSwiftUISampleTests */,
 				92CFE9F628A7BD3000C1348F /* FirebaseModSwiftUISampleUITests */,
 				92CFE9DA28A7BD2D00C1348F /* Products */,
+				92CFEA0928A7DA4B00C1348F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +106,7 @@
 			children = (
 				92CFE9DC28A7BD2D00C1348F /* FirebaseModSwiftUISampleApp.swift */,
 				92CFE9DE28A7BD2D00C1348F /* ContentView.swift */,
+				92CFEA0E28A7E7A400C1348F /* GoogleService-Info.plist */,
 				92CFE9E028A7BD3000C1348F /* Assets.xcassets */,
 				92CFE9E228A7BD3000C1348F /* Preview Content */,
 			);
@@ -127,6 +138,22 @@
 			path = FirebaseModSwiftUISampleUITests;
 			sourceTree = "<group>";
 		};
+		92CFEA0928A7DA4B00C1348F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92CFEA1428A809CE00C1348F /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				92CFEA1628A809DB00C1348F /* FirebaseTools */,
+				92CFEA1528A809DB00C1348F /* MyFeature1 */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,12 +164,17 @@
 				92CFE9D528A7BD2D00C1348F /* Sources */,
 				92CFE9D628A7BD2D00C1348F /* Frameworks */,
 				92CFE9D728A7BD2D00C1348F /* Resources */,
+				92CFEA1028A7E89F00C1348F /* Run Script - Firebase */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = FirebaseModSwiftUISample;
+			packageProductDependencies = (
+				92CFEA1728A80A6D00C1348F /* FirebaseTools */,
+				92CFEA1928A80A6D00C1348F /* MyFeature1 */,
+			);
 			productName = FirebaseModSwiftUISample;
 			productReference = 92CFE9D928A7BD2D00C1348F /* FirebaseModSwiftUISample.app */;
 			productType = "com.apple.product-type.application";
@@ -233,6 +265,7 @@
 			files = (
 				92CFE9E428A7BD3000C1348F /* Preview Assets.xcassets in Resources */,
 				92CFE9E128A7BD3000C1348F /* Assets.xcassets in Resources */,
+				92CFEA0F28A7E7A400C1348F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +284,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		92CFEA1028A7E89F00C1348F /* Run Script - Firebase */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - Firebase";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92CFE9D528A7BD2D00C1348F /* Sources */ = {
@@ -416,6 +470,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"FirebaseModSwiftUISample/Preview Content\"";
 				DEVELOPMENT_TEAM = G53B4R6LDW;
 				ENABLE_PREVIEWS = YES;
@@ -583,6 +638,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		92CFEA1728A80A6D00C1348F /* FirebaseTools */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FirebaseTools;
+		};
+		92CFEA1928A80A6D00C1348F /* MyFeature1 */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyFeature1;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 92CFE9D128A7BD2D00C1348F /* Project object */;
 }

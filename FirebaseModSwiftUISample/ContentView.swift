@@ -6,11 +6,22 @@
 //
 
 import SwiftUI
+import MyFeature1
+import FirebaseTools
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("Hello, world!")
+                .padding()
+            
+            Button {
+                FirebaseTools.set(userID: "0", userName: "Lk")
+                MyFeature1().doSomethig()
+            } label: {
+                Text("Login")
+            }
+        }
     }
 }
 
